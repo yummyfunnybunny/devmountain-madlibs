@@ -10,6 +10,19 @@
 
   <body>
     <h1>Nice to meet you, {{ name }}.</h1>
+    <p>You're very {{ compliment }}<p/>
+
+    <form action="/game">
+      <p for="">Would you like to play a game?</p>
+
+      <input type="radio" name="play" id="yes-input" value="yes" />
+      <label for="yes-input">Yes</label>
+
+      <input type="radio" name="play" id="no-input" value="no" />
+      <label for="no-input">No</label>
+
+      <button type="submit">Let's Go!</button>
+    </form>
   </body>
 
 </html>
